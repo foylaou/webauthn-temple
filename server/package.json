@@ -1,0 +1,23 @@
+{
+  "name": "webauthn-server",
+  "version": "1.0.0",
+  "description": "WebAuthn server implementation",
+  "main": "dist/app.js",
+  "type": "module",
+  "scripts": {
+    "dev": "bun run --hot src/app.ts",
+    "build": "bun build src/app.ts --outdir dist --target node",
+    "start": "node dist/app.js"
+  },
+  "dependencies": {
+    "@simplewebauthn/server": "^13.1.2",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "helmet": "^8.1.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.3",
+    "nodemon": "^3.1.10"
+  }
+}
